@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  h1= Chat de Prueba con Socket.IO
+  h1 Chat de Prueba con Socket.IO
   h2#numClientes
   ul#mensajes
   div
@@ -38,4 +38,3 @@ block content
     socket.on('num_clientes', num => {
         numClientes.innerText = `Número de clientes conectados: ${num}`;
     });
-  
